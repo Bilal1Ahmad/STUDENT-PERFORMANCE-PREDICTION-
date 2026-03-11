@@ -1,11 +1,6 @@
-"""
-========================================================================
-UTILITY SCRIPT - MODEL TESTING AND PREDICTION
-========================================================================
-This script provides utilities for testing the trained models outside
-of the Streamlit app. Useful for debugging and batch predictions.
-========================================================================
-"""
+
+ #This script provides utilities for testing the trained models outside
+#of the Streamlit app. Useful for debugging and batch predictions
 
 import pickle
 from pathlib import Path
@@ -13,10 +8,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 
-# ========================================================================
 # LOAD MODELS AND PREPROCESSING OBJECTS
-# ========================================================================
-
 def load_models():
     """Load all trained models and preprocessing objects."""
     model_dir = Path('./model')
@@ -41,9 +33,7 @@ def load_models():
     return lr_model, rf_model, scaler, label_encoders, feature_names
 
 
-# ========================================================================
 # UTILITY FUNCTIONS
-# ========================================================================
 
 def create_prediction_input(hours_studied, attendance, previous_score, sleep_hours,
                            internet_access='Yes', motivation_level='Medium',
@@ -161,11 +151,7 @@ def assess_prediction(avg_score):
     else:
         return "⚠️ Low! Significant improvement needed!"
 
-
-# ========================================================================
 # TESTING & DEMONSTRATION
-# ========================================================================
-
 def test_models():
     """Test models with sample predictions."""
     
