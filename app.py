@@ -20,10 +20,7 @@ st.set_page_config(
 plt.style.use('seaborn-v0_8-darkgrid')
 sns.set_palette("husl")
 
-# ========================================================================
 # LOAD MODELS AND PREPROCESSING OBJECTS
-# ========================================================================
-
 @st.cache_resource
 def load_models():
     """Load all trained models and preprocessing objects from pickle files."""
@@ -57,10 +54,7 @@ except Exception as e:
     st.error(f"Error loading models: {e}")
     models_loaded = False
 
-# ========================================================================
 # STREAMLIT APP LAYOUT
-# ========================================================================
-
 # Header
 st.markdown("""
     <h1 style='text-align: center; color: #1f77b4;'>
