@@ -1,17 +1,4 @@
-"""
-========================================================================
-STUDENT PERFORMANCE PREDICTION SYSTEM - STREAMLIT WEB APP
-========================================================================
-A web application for predicting student exam scores based on various
-educational and personal factors.
 
-Features:
-- User-friendly interface for data input
-- Real-time predictions using trained ML models
-- Visual comparison between models
-- Feature importance analysis
-========================================================================
-"""
 
 import streamlit as st
 import pickle
