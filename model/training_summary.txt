@@ -1,0 +1,37 @@
+
+MODEL TRAINING SUMMARY
+======================
+
+Dataset Information:
+- Total samples: 6607
+- Number of features: 19
+- Target variable: Exam_Score
+
+Data Split:
+- Training set: 5285 samples
+- Testing set: 1322 samples
+- Test size ratio: 20%
+
+Models Trained:
+1. Linear Regression
+   - MSE: 4.3993
+   - RMSE: 2.0974
+   - MAE: 1.0155
+   - R² Score: 0.6888
+
+2. Random Forest Regressor
+   - MSE: 4.6553
+   - RMSE: 2.1576
+   - MAE: 1.0992
+   - R² Score: 0.6707
+
+Best Model: Linear Regression
+
+Files Generated:
+- linear_regression_model.pkl
+- random_forest_model.pkl
+- scaler.pkl
+- label_encoders.pkl
+- feature_names.pkl
+
+Date: 2026-03-11 12:18:23.733901
